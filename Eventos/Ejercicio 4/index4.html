@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>Vamo a peliculiar</h1>
+    <button id="button">Empezar</button>
+    
+    <li id=li1></li>
+    <li id=li2></li>
+    <li id=li3></li>
+    <li id=li4></li>
+    <li id=li5></li>
+
+    <script>
+        const button= document.getElementById("button");
+        const inception = 'Inception';
+        const theButterFlyEffect = 'The butterfly effect';
+        const eternalSunshineOfTheSM = 'Eternal sunshine of the spotless mind';
+        const blueVelvet = 'Blue velvet';
+        const split = 'Split';
+        var li1 = document.getElementById('li1');
+        var li2 = document.getElementById('li2');
+        var li3 = document.getElementById('li3');
+        var li4 = document.getElementById('li4');
+        var li5 = document.getElementById('li5');
+
+        function movie(){
+            li1.innerHTML=inception;
+            
+            li2.innerHTML=theButterFlyEffect;
+           
+            li3.innerHTML=eternalSunshineOfTheSM;
+            li4.innerHTML=blueVelvet;
+            li5.innerHTML=split;
+        }
+        
+      
+        button.addEventListener("click",movie);
+
+
+
+       
+        function show1(){
+           
+            console.log('Inception');
+
+        }
+        li1.addEventListener("mouseover",show1);
+
+        function show2(){
+           
+           console.log('The butterfly effect');
+
+       }
+       function show3(){
+           
+           console.log("Eternal sunshine of the spotless mind");
+
+       }
+       function show4(){
+           
+           console.log("Blue velvet");
+
+       }
+       function show5(){
+           
+           console.log("Split");
+
+       }
+
+   li1.addEventListener("mouseover",show1);
+   li2.addEventListener("mouseover",show2);
+   li3.addEventListener("mouseover",show3);
+   li4.addEventListener("mouseover",show4);
+   li5.addEventListener("mouseover",show5);
+    </script>
+ </body>
+
+</html>

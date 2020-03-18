@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento</title>
+</head>
+<body>
+    <p id="text">Hola</p>
+    <button id="button">Cambiar</button>
+    <script>
+        const button= document.querySelector('button');
+        var text=document.getElementById("text");
+        var text2="Mi primer click, ¡ole yo y la mujer que me parió!"
+
+        function cambiarTexto(){
+            text.innerHTML=text2;
+        }
+
+      button.addEventListener("click",cambiarTexto);
+    </script>
+</body>
+</html>
